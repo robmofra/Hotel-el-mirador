@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel El Mirador</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel <span>El Mirador</span></h1>
+        <nav>
+            <a href="#reservas">Reservar</a>
+            <a href="#tu-hotel">Tu Hotel</a>
+            <a href="#galeria">Galería</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="reservas">
+            <h2>Reserva tu Estancia</h2>
+            <div class="card">
+                <form id="res-form">
+                    <label>Nombre:</label>
+                    <input type="text" id="nombre" required>
+                    <label>Habitación:</label>
+                    <select id="tipo">
+                        <option>Simple - $50.000</option>
+                        <option>Doble - $85.000</option>
+                    </select>
+                    <button type="submit">Confirmar Reserva</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="tu-hotel">
+            <h2>Tu Hotel El Mirador</h2>
+            <div class="flex">
+                <p>Ubicado en <strong>Valledupar</strong>, fundado por tres estudiantes del SENA con la meta de ofrecer el mejor servicio vallenato.
+                 Valledupar es conocida por sus tradiciones musicales, folclóricas y culturales de la región caribe colombiana, así como por ser la cuna del vallenato, un género musical colombiano 
+                 declarado patrimonio cultural inmaterial de la humanidad por la Unesco. 
+            <br> 
+                 El Mirador Hotel Valledupar cuenta con instalaciones de primera clase y servicios exclusivos que garantizan una estadía inolvidable. Como huésped, disfrutarás de una atención personalizada excepcional y podrás relajarte en un ambiente tranquilo y acogedor.</p>
+                <img src="fachada.png" width="400" alt="Hotel">
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="grid">
+                <img src="plaza.jpeg" width="400" alt="Alrededores">
+                <img src="habitacion.jpg" width="400" alt="Habitación">
+                <img src="plaza2.webp" width="400" alt="Plaza">
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
